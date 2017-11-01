@@ -97,7 +97,7 @@ namespace DependencyLocator
                 logger.Warn("Attempting default registration...");
                 this.Register(t, t);
                 logger.Warn("Attempting creation...");
-                this.Locate(t, true);
+                instance = this.Locate(t, true);
                 logger.Warn("Creation appears successful...");
                 logger.Info("Creation will be reattempted in the same manner next time.");
             }
